@@ -1,11 +1,3 @@
-/**
- * File              : vc_strstr.c
- * Author            : Derrick Park
- * Date              : Wed  8 Aug 22:40:52 2018
- * Last Modified Date: Wed  8 Aug 22:40:52 2018
- * Last Modified By  : Derrick Park
- */
-
 char *vc_strstr(char *str, char *to_find)
 {
   int i;

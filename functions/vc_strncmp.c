@@ -1,11 +1,3 @@
-/**
- * File              : vc_strncmp.c
- * Author            : Derrick Park
- * Date              : Wed  8 Aug 22:57:58 2018
- * Last Modified Date: Wed  8 Aug 22:57:58 2018
- * Last Modified By  : Derrick Park
- */
-
 int vc_strncmp(char *s1, char *s2, unsigned int n)
 {
   if (!n)

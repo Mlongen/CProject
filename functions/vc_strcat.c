@@ -1,11 +1,3 @@
-/**
- * File              : vc_strcat.c
- * Author            : Derrick Park
- * Date              : Fri 10 Aug 12:56:10 2018
- * Last Modified Date: Fri 10 Aug 12:56:10 2018
- * Last Modified By  : Derrick Park
- */
-
 char *vc_strcat(char *dest, char *src)
 {
   int i;

@@ -1,11 +1,3 @@
-/**
- * File              : vc_str_is_lowercase.c
- * Author            : Derrick Park
- * Date              : Fri 10 Aug 12:24:36 2018
- * Last Modified Date: Fri 10 Aug 12:24:36 2018
- * Last Modified By  : Derrick Park
- */
-
 int vc_str_is_lowercase(char *str)
 {
   int i;

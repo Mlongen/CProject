@@ -1,12 +1,3 @@
-/**
- * File              : vc_strlcat.c
- * Author            : Derrick Park
- * Date              : Fri 10 Aug 13:02:53 2018
- * Last Modified Date: Fri 10 Aug 13:02:53 2018
- * Last Modified By  : Derrick Park
- */
-
-
 static int vc_strlen(char *str)
 {
   int i;
