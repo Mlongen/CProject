@@ -3,4 +3,4 @@
 
 
 
-#### Team: Marcelo, Javier, Bianca
+#### Team: Marcelo, Javier, Bianca, Natsumi
