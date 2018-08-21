@@ -1,3 +1,11 @@
+/* ************************************ */
+/*                                      */
+/* vc_memchr.c                          */
+/*                                      */
+/* By: Marcelo                          */
+/*                                      */
+/* ************************************ */
+
 #include <stdio.h>
 
 void *vc_memchr(const void *s, int c, size_t n)

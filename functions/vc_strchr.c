@@ -1,25 +1,23 @@
 /* ************************************ */
 /*                                      */
-/* vc_memmove.c                         */
+/* vc_strchr.c                          */
 /*                                      */
 /* By: Marcelo                          */
 /*                                      */
 /* ************************************ */
 
 #include <stdio.h>
-
-void *vc_memmove(void *dst, const void *src, size_t n)
+char *vc_strchr(const char *s, int c)
 {
-
     int i;
-    char *sc;
-    char *dt;
     i = 0;
-    sc = (char *)src;
-    dt = (char *)dst;
-    while (i < n)
+
+    while (s[i++])
     {
-        sc[i] = dt[i];
-        i++;
+        if (s[i] == c)
+        {
+            return (char *)s + i;
+        }
     }
+    return NULL;
 }
