@@ -5,11 +5,10 @@
  * 
  */
 
-#include <stdlib.h>
 #include <stdio.h>
+#include <unistd.h>
 
-void vc_putnbr(int *nbr)
+void vc_putnbr(int n)
 {
-    write(1, nbr, sizeof(nbr));
-    return;
+    write(1, &n, sizeof(n));
 }
