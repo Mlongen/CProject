@@ -3,7 +3,7 @@
 /*                                      */
 /* vc_memcpy.c                          */
 /*                                      */
-/* By:Bianca,Javier,EmreA,Marcelo,Natsumi*/
+/* By:Javier                            */
 /*                                      */
 /* ************************************ */
 void *vc_memcpy(void *s1, const void *s2, size_t n)

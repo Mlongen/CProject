@@ -2,7 +2,7 @@
 /*                                      */
 /* vc_strtrim.c                         */
 /*                                      */
-/* By:Bianca,Javier,EmreA,Marcelo,Natsumi*/
+/* By:Javier                            */
 /*                                      */
 /* ************************************ */
 #include <stdio.h>
