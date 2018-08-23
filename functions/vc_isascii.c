@@ -1,22 +1,14 @@
 /* ************************************ */
 /*                                      */
-/* vc_bzero.c                           */
+/* vc_isascii.c                         */
 /*                                      */
 /* By: Marcelo                          */
 /*                                      */
 /* ************************************ */
-#include <string.h>
 
-void vc_bzero(void *s, size_t n)
+int vc_isascii(int c)
 {
-    int i;
-    char *ch;
-    i = 0;
-    ch = s;
-    while (i < n)
-    {
-        *ch = '\0';
-        ch++;
-        i++;
-    }
+    if (c >= 0 && c <= 127)
+        return 1;
+    return 0;
 }

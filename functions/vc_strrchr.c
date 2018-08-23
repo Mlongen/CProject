@@ -6,7 +6,8 @@
 /*                                      */
 /* ************************************ */
 
-#include <stdio.h>
+#include <string.h>
+
 char *vc_strrchr(const char *s, int c)
 {
     int i;

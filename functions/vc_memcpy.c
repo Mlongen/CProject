@@ -1,18 +1,18 @@
-#include <stdio.h>
+#include <string.h>
 /* ************************************ */
 /*                                      */
 /* vc_memcpy.c                          */
 /*                                      */
-/* By:Bianca,Javier,EmreA,Marcelo,Natsumi*/
+/* By: Javier                           */
 /*                                      */
 /* ************************************ */
 void *vc_memcpy(void *s1, const void *s2, size_t n)
 {
-	long	*ptr1;
-	long	*ptr2;
-	char	*cptr1;
-	char	*cptr2;
-	
+	long *ptr1;
+	long *ptr2;
+	char *cptr1;
+	char *cptr2;
+
 	ptr1 = (long *)s1;
 	ptr2 = (long *)s2;
 	while (n >= sizeof(long))
@@ -31,8 +31,3 @@ void *vc_memcpy(void *s1, const void *s2, size_t n)
 	}
 	return (s1);
 }
-
-
-
-
-

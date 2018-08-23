@@ -1,22 +1,14 @@
 /* ************************************ */
 /*                                      */
-/* vc_bzero.c                           */
+/* vc_tolower.c                         */
 /*                                      */
 /* By: Marcelo                          */
 /*                                      */
 /* ************************************ */
-#include <string.h>
 
-void vc_bzero(void *s, size_t n)
+int vc_tolower(int c)
 {
-    int i;
-    char *ch;
-    i = 0;
-    ch = s;
-    while (i < n)
-    {
-        *ch = '\0';
-        ch++;
-        i++;
-    }
+    if (c >= 'A' && c <= 'Z')
+        c += 32;
+    return c;
 }

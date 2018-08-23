@@ -5,8 +5,7 @@
 /* By: Bianca                           */
 /*                                      */
 /* ************************************ */
-#include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 void *vc_memalloc(size_t size)
 {

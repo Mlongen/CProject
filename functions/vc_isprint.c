@@ -1,22 +1,16 @@
 /* ************************************ */
 /*                                      */
-/* vc_bzero.c                           */
+/* vc_isprint.c                          */
 /*                                      */
 /* By: Marcelo                          */
 /*                                      */
 /* ************************************ */
-#include <string.h>
 
-void vc_bzero(void *s, size_t n)
+int vc_isprint(int c)
 {
-    int i;
-    char *ch;
-    i = 0;
-    ch = s;
-    while (i < n)
-    {
-        *ch = '\0';
-        ch++;
-        i++;
-    }
+  if (c >= 32 && c <= 126)
+  {
+    return 1;
+  }
+  return 0;
 }

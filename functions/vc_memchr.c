@@ -6,7 +6,7 @@
 /*                                      */
 /* ************************************ */
 
-#include <stdio.h>
+#include <string.h>
 
 void *vc_memchr(const void *s, int c, size_t n)
 {

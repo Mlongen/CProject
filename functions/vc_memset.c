@@ -6,7 +6,7 @@
 /*                                      */
 /* ************************************ */
 
-#include <stdio.h>
+#include <string.h>
 
 void *vc_memset(void *b, int c, size_t len)
 {

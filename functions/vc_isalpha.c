@@ -1,22 +1,21 @@
 /* ************************************ */
 /*                                      */
-/* vc_bzero.c                           */
+/* vc_isalpha.c                         */
 /*                                      */
 /* By: Marcelo                          */
 /*                                      */
 /* ************************************ */
-#include <string.h>
 
-void vc_bzero(void *s, size_t n)
+int vc_isalpha(char *str)
 {
-    int i;
-    char *ch;
-    i = 0;
-    ch = s;
-    while (i < n)
-    {
-        *ch = '\0';
-        ch++;
-        i++;
-    }
+  int i;
+
+  i = 0;
+  while (str[i])
+  {
+    if (!((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z')))
+      return 0;
+    i++;
+  }
+  return 1;
 }

@@ -6,8 +6,8 @@
 /*                                      */
 /* ************************************ */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
+
 static int vc_strlen(const char *str)
 {
     int i;

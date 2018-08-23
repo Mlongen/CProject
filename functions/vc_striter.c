@@ -5,9 +5,9 @@
 /* By: Bianca                           */
 /*                                      */
 /* ************************************ */
-#include <stdio.h>
+#include <string.h>
 
-void subst_a(char *x)
+static void subst_a(char *x)
 {
     *x = 'a';
 }

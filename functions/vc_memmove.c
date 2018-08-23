@@ -6,7 +6,7 @@
 /*                                      */
 /* ************************************ */
 
-#include <stdio.h>
+#include <string.h>
 
 void *vc_memmove(void *dst, const void *src, size_t n)
 {

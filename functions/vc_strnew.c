@@ -5,8 +5,7 @@
 /* By: Bianca                           */
 /*                                      */
 /* ************************************ */
-#include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 char *vc_strnew(size_t size)
 {

@@ -1,13 +1,14 @@
 /* ************************************ */
 /*                                      */
-/* vc_putendl.c                         */
+/* vc_toupper.c                         */
 /*                                      */
-/*By: Javier                            */
+/* By: Javier                         */
 /*                                      */
 /* ************************************ */
 
-void vc_putendl(char const *s)
+int vc_toupper(int c)
 {
-    vc_putstr(s);
-    vc_putchar('\n');
+    if (('a' < 'c') && ('c' <= 'z'))
+        c = c - 32;
+    return c;
 }

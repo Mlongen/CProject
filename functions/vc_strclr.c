@@ -5,7 +5,7 @@
 /* By: Bianca                           */
 /*                                      */
 /* ************************************ */
-#include <stdio.h>
+#include <string.h>
 
 void vc_strclr(char *s)
 {

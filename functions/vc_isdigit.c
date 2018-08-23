@@ -1,22 +1,18 @@
 /* ************************************ */
 /*                                      */
-/* vc_bzero.c                           */
+/* vc_isdigit.c                         */
 /*                                      */
 /* By: Marcelo                          */
 /*                                      */
 /* ************************************ */
-#include <string.h>
 
-void vc_bzero(void *s, size_t n)
+int vc_isdigit(char *str)
 {
-    int i;
-    char *ch;
-    i = 0;
-    ch = s;
-    while (i < n)
-    {
-        *ch = '\0';
-        ch++;
-        i++;
-    }
+  int i;
+
+  i = 0;
+  while (str[i])
+    if (!(str[i] >= '0' && str[i] <= '9'))
+      return 0;
+  return 1;
 }
