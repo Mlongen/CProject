@@ -7,7 +7,7 @@
 /* ************************************ */
 
 #include <string.h>
-
+#include <stdlib.h>
 static int vc_strlen(const char *str)
 {
     int i;

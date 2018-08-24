@@ -1,28 +1,28 @@
 static int vc_strlen(char *str)
 {
   int i;
-  
+
   i = 0;
   while (str[i])
     i++;
   return i;
 }
 
-unsigned int vc_strlcat(char *dest, char *src, unsigned int size)
+unsigned int vc_strlcat(char *dest, char *src, unsigned int dstsize)
 {
   unsigned int dest_len;
   unsigned int i;
 
   i = 0;
-  while (dest[i] && i < size)
+  while (dest[i] && i < dstsize)
     i++;
   dest_len = i;
-  while (src[i - dest_len] && i < size - 1)
+  while (src[i - dest_len] && i < dstsize - 1)
   {
     dest[i] = src[i - dest_len];
     i++;
   }
-  if (dest_len < size)
+  if (dest_len < dstsize)
     dest[i] = '\0';
   return dest_len + vc_strlen(src);
 }

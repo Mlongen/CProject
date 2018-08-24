@@ -1,7 +1,9 @@
 #include <string.h>
+#include <stdlib.h>
 
 void vc_putstr(char *str)
 {
-  while (*str != '\0')
-    putchar(*str++);
+  int i = 0;
+  while (str[i] != '\0')
+    putchar(str[i++]);
 }

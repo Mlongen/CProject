@@ -11,7 +11,7 @@
 void *vc_memmove(void *dst, const void *src, size_t n)
 {
 
-    int i;
+    size_t i;
     char *sc;
     char *dt;
     i = 0;

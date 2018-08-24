@@ -6,12 +6,12 @@
 /*                                      */
 /* ************************************ */
 #include <string.h>
-
+#include <stdlib.h>
 char *vc_strnew(size_t size)
 {
-    int i;
-    int *ptr_block;
-    char str;
+    size_t i;
+    char *ptr_block;
+    char *str;
 
     i = 0;
     while (i < size)
@@ -27,6 +27,6 @@ char *vc_strnew(size_t size)
             i++;
         }
     }
-    str = *ptr_block;
-    return &str;
+    str = ptr_block;
+    return str;
 }

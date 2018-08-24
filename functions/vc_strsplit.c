@@ -6,8 +6,8 @@
  */
 
 #include <string.h>
-
-static int vc_characters(char ch, char *characters)
+#include <stdlib.h>
+static int vc_characters(char ch,    char *characters)
 {
     while (*characters)
     {
@@ -48,38 +48,28 @@ static int vc_numOfCharacters(char *str, char *characters)
     return numbers;
 }
 
-char **vc_split(char *str, char *characters)
+char **vc_strsplit(char const *s, char *c)
 {
     char **splitStr;
     int a = 0;
     int b;
     int numbers;
-    int c = vc_words(str, characters);
-    if (!(splitStr = (char **)malloc(sizeof(char **) * (c + 1))))
+    int y = vc_words(s, c);
+    if (!(splitStr = (char **)malloc(sizeof(char **) * (y + 1))))
         return NULL;
-    while (*str && c)
+    while (*s && y)
     {
-        numbers = vc_numOfCharacters(str, characters);
+        numbers = vc_numOfCharacters(s, c);
         if (numbers > 0)
         {
             splitStr[a] = (char *)malloc(sizeof(char) * (numbers + 1));
             for (b = 0; b < numbers; b++)
-                splitStr[a][b] = str[b];
+                splitStr[a][b] = s[b];
             splitStr[a++][b] = '\0';
-            c--;
+            y--;
         }
-        str += numbers + 1;
+        s += numbers + 1;
     }
     splitStr[a] = 0;
     return splitStr;
-}
-
-int main()
-{
-    char str[] = "hello world";
-    char character = ' ';
-    char **arr = vc_split(str, &character);
-    while (*arr)
-        printf("%s\n", *arr++);
-    return 0;
 }

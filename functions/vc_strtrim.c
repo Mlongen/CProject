@@ -7,6 +7,7 @@
 /* ************************************ */
 
 #include <string.h>
+#include <stdlib.h>
 
 static char *vc_strdup(char *src)
 {
@@ -24,7 +25,7 @@ static char *vc_strdup(char *src)
     dst[i] = '\0';
     return dst;
 }
-s static int vc_strlen(char *str)
+static int vc_strlen(char *str)
 {
     int i;
 

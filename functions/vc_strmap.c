@@ -6,6 +6,7 @@
 /*                                      */
 /* ************************************ */
 #include <string.h>
+#include <stdlib.h>
 
 static char *vc_strcpy(char *dest, char *src)
 {
@@ -52,7 +53,7 @@ static void *vc_memalloc(size_t size)
     }
 }
 
-char vc_strmap(char const *s, char (*f)(char))
+char *vc_strmap(char const *s, char (*f)(char))
 {
     int i;
     char *result;
@@ -68,5 +69,5 @@ char vc_strmap(char const *s, char (*f)(char))
         result[i] = (*f)(result[i]);
         i++;
     }
-    return (result);
+    return result;
 }

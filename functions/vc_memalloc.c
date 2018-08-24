@@ -6,6 +6,7 @@
 /*                                      */
 /* ************************************ */
 #include <string.h>
+#include <stdlib.h>
 
 void *vc_memalloc(size_t size)
 {

@@ -1,13 +1,17 @@
 /* ************************************ */
 /*                                      */
-/* vc_putendl.c                         */
+/* vc_memdel.c                          */
 /*                                      */
-/*By: Javier                            */
+/* By: Bianca                           */
 /*                                      */
 /* ************************************ */
-
-void vc_putendl(char const *s)
+#include <string.h>
+#include <stdlib.h>
+void vc_memdel(void **ap)
 {
-    vc_putstr(s);
-    vc_putchar('\n');
+    if (ap)
+    {
+        free(*ap);
+        *ap = NULL;
+    }
 }

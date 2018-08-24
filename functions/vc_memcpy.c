@@ -29,5 +29,4 @@ void *vc_memcpy(void *s1, const void *s2, size_t n)
 		*cptr1++ = *cptr2++;
 		--n;
 	}
-	return (s1);
 }

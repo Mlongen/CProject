@@ -9,10 +9,10 @@
 
 void vc_bzero(void *s, size_t n)
 {
-    int i;
+    size_t i;
     char *ch;
     i = 0;
-    ch = s;
+    ch = (char *)s;
     while (i < n)
     {
         *ch = '\0';

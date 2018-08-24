@@ -6,7 +6,7 @@
 /*By:Javier                             */
 /*                                      */
 /* ************************************ */
-void vc_memccpy(void *dst, const void *src, int c, size_t n)
+void *vc_memccpy(void *dst, const void *src, int c, size_t n)
 {
     size_t i;
     char *dest;

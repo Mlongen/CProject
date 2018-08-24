@@ -10,7 +10,7 @@
 
 void *vc_memchr(const void *s, int c, size_t n)
 {
-    int i;
+    size_t i;
     unsigned char *result;
     i = 0;
     result = (unsigned char *)s;

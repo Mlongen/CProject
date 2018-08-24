@@ -1,0 +1,44 @@
+#include <unistd.h>
+#include <string.h>
+
+int vc_atoi(char *str);
+void vc_bzero(void *s, size_t n);
+int vc_isalnum(int c);
+int vc_isascii(int c);
+int vc_isalpha(char *str);
+int vc_isdigit(char *str);
+int vc_isprint(int c);
+char *vc_itoa(int n);
+void *vc_memalloc(size_t size);
+void *vc_memccpy(void *dst, const void *src, int c, size_t n);
+void *vc_memmove(void *dst, const void *src, size_t n);
+void *vc_memset(void *b, int c, size_t len);
+void vc_putchar(char c);
+void vc_putendl(char const *s);
+void vc_putnbr(int n);
+void vc_putstr(char *str);
+char *vc_strcat(char *dest, char *src);
+char *vc_strchr(const char *s, int c);
+void vc_strclr(char *s);
+int vc_strcmp(char *s1, char *s2);
+char *vc_strcpy(char *dest, char *src);
+void vc_strdel(char **as);
+char *vc_strdup(char *src);
+void vc_striter(char *s, void (*f)(char *));
+char *vc_strjoin(const char *s1, const char *s2);
+unsigned int vc_strlcat(char *dest, char *src, unsigned int dstsize);
+int vc_strlen(char *str);
+char *vc_strmap(char const *s, char (*f)(char));
+char *vc_strncat(char *dest, char *src, int n);
+int vc_strncmp(char *s1, char *s2, unsigned int n);
+char *vc_strncpy(char *dest, char *src, unsigned int n);
+char *vc_strnew(size_t size);
+char *vc_strnstr(const char *str, const char *to_find, size_t len);
+char *vc_strrchr(const char *s, int c);
+char **vc_strsplit(char const *s, char *c);
+char *vc_strstr(char *str, char *to_find);
+char *vc_strsub(char const *s, size_t start, size_t len);
+char *vc_strtrim(char const *s);
+int vc_tolower(int c);
+int vc_toupper(int c);
+void vc_memdel(void **ap);

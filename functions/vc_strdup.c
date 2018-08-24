@@ -6,6 +6,7 @@
  * Last Modified By  : Derrick Park
  */
 #include <string.h>
+#include <stdlib.h>
 
 char *vc_strdup(char *src)
 {
